@@ -31,7 +31,7 @@ export const handler = async (event) => {
 
   const domainName = event.requestContext.domainName;  // e.g., "abcdef1234.execute-api.us-west-2.amazonaws.com"
   const stage = event.requestContext.stage;            // e.g., "prod"
-  const connectionId = event.requestContext.connectionId;  // The unique connection ID
+  const userConnectionId = event.requestContext.connectionId;  // The unique connection ID
 
   // Construct the API Gateway Management API endpoint
   const apiGatewayManagementApi = new ApiGatewayManagementApiClient({
@@ -43,9 +43,12 @@ export const handler = async (event) => {
     time: "10:00",
   });
   connectionIds.forEach(async (connectionId) => {
+    if (userConnectionId === connectionId) {
+      return;
+    }
     const input = {
       // PostToConnectionRequest
-      Data: "hello", // e.g. Buffer.from("") or new TextEncoder().encode("")   // required
+      Data: "playVideo", // e.g. Buffer.from("") or new TextEncoder().encode("")   // required
       ConnectionId: connectionId, // required
     };
 

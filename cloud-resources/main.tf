@@ -148,6 +148,11 @@ resource "aws_iam_role_policy_attachment" "lambda_execution_policy" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
 
+resource "aws_iam_role_policy_attachment" "api_gateway_manage_connections_attachment" {
+  role       = aws_iam_role.lambda_exec_role.name
+  policy_arn = aws_iam_policy.api_gateway_manage_connections_policy.arn
+}
+
 # Grant API Gateway permission to invoke Lambda functions
 resource "aws_lambda_permission" "connect_lambda_permission" {
   statement_id  = "AllowExecutionFromApiGatewayConnect"

@@ -78,3 +78,10 @@ function decreaseVideoTime(seconds) {
     console.log("Video element not found");
   }
 }
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    console.log("message " + message);
+    if (message.type === 'playVideo'){
+      togglePlayPause();
+    }
+});
