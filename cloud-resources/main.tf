@@ -123,6 +123,21 @@ resource "aws_iam_policy" "dynamodb_full_access_policy" {
   })
 }
 
+resource "aws_iam_policy" "api_gateway_manage_connections_policy" {
+  name        = "ApiGatewayManageConnectionsPolicy"
+  description = "Policy to manage WebSocket connections in API Gateway"
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action   = "execute-api:ManageConnections",
+        Effect   = "Allow",
+        Resource = "${aws_apigatewayv2_api.websocket_api.execution_arn}/*/*"
+      }
+    ]
+  })
+}
+
 resource "aws_iam_role_policy_attachment" "dynamodb_full_access_attachment" {
   role       = aws_iam_role.lambda_exec_role.name
   policy_arn = aws_iam_policy.dynamodb_full_access_policy.arn
