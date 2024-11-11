@@ -5,6 +5,23 @@ provider "aws" {
 ######################################################
 # CREATE LAMBDAS
 ######################################################
+data "archive_file" "connect_lambda_zip" {
+  type        = "zip"
+  source_dir  = "./connect-function"  
+  output_path = "./connect-function.zip"
+}
+
+data "archive_file" "disconnect_lambda_zip" {
+  type        = "zip"
+  source_dir  = "./disconnect-function"  
+  output_path = "./disconnect-function.zip" 
+}
+
+data "archive_file" "play_pause_lambda_zip" {
+  type        = "zip"
+  source_dir  = "./play-pause-function"  
+  output_path = "./play-pause-function.zip" 
+}
 
 resource "aws_lambda_function" "connect_lambda" {
   function_name = "ConnectFunction"
@@ -27,7 +44,7 @@ resource "aws_lambda_function" "play_pause_lambda" {
   handler       = "index.handler"
   runtime       = "nodejs20.x"
   role = aws_iam_role.lambda_exec_role.arn
-  filename = "play-pause-function.zip"  # Replace with your deployment package
+  filename = "play-pause-function.zip" 
 }
 ######################################################
 # END CREATE LAMBDAS
@@ -208,7 +225,6 @@ resource "aws_apigatewayv2_deployment" "websocket_deployment" {
 
 resource "aws_apigatewayv2_stage" "websocket_stage" {
   api_id      = aws_apigatewayv2_api.websocket_api.id
-  deployment_id = aws_apigatewayv2_deployment.websocket_deployment.id
   name        = "dev"
   auto_deploy = true
 }
