@@ -1,0 +1,38 @@
+{
+  "name": "Peacock P2P Watch Party",
+  "version": "0.0.0",
+  "description": "Synced watch party for Peacock with one other user",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "runtime",
+    "https://www.peacocktv.com/"
+  ],
+  "background": {
+    "service_worker": "websocket.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.peacocktv.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["https://www.peacocktv.com/*"]
+    }
+  ]
+}

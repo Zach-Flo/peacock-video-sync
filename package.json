@@ -1,0 +1,17 @@
+{
+  "name": "peacock-p2p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "https": "^1.0.0",
+    "node": "^22.5.1",
+    "ws": "^8.18.0"
+  }
+}

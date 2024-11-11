@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="saC4pQ7W1r9mTlqRP2yJ" name="Page-1">
+        <mxGraphModel dx="775" dy="285" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,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;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="110" width="85" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="114.5" width="78.36" height="71" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Orange_lambda.svg/1959px-Orange_lambda.svg.png;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="30" width="47.79" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Store connection IDs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="94.18" y="84.5" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Websocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="80" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="handle new connection" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="507.79" y="40" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Orange_lambda.svg/1959px-Orange_lambda.svg.png;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="90" width="47.79" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="handle broken connection" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="507.78999999999996" y="100" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Orange_lambda.svg/1959px-Orange_lambda.svg.png;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="160" width="47.79" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="handle play/pause" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="527.79" y="170" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Orange_lambda.svg/1959px-Orange_lambda.svg.png;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="220" width="47.79" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="handle sync" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="542.79" y="230" width="90" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+.env
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+*.zip
